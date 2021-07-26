@@ -1,0 +1,36 @@
+    {% extends 'base.html' %}
+    {% block content %}
+	
+	<main class="page-wrapper">
+	
+		<h1>Details about Post # {{object.id}}</h1>
+		
+		<p>
+			<span class="detail-head">Title: </span> {{object.title}}
+		</p>
+		
+		<p>
+			<span class="detail-head">Date Created: </span> {{object.date_created}}
+		</p>
+		
+		<p>
+			<span class="detail-head">Title: </span> {{object.title}}
+		</p>
+		
+		<p>
+			<span class="detail-head">Author Username: </span> {{object.author.username}}
+		</p>
+		
+		<p> 
+			<span class="detail-head">Contact: </span> <a href="mailto:{{object.author.email}}">Email the author</a>
+		</p>
+		
+		<p>
+			<span class="detail-head">Message Text: </span> {{object.text}}
+		</p>
+		
+	
+	</main>
+	
+	{% endblock content %}
+

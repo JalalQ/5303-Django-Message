@@ -1,0 +1,57 @@
+html {
+    box-sizing:border-box;
+}
+*, *::before, *::after {
+    box-sizing:inherit;
+}
+
+body {
+    margin:0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+    font-size: 1em;
+    line-height: 1.2;
+    background-color: honeydew;
+}
+
+/* -- Common classes */
+.page-wrapper {
+    margin:0 5%;
+    position:relative;
+    margin-bottom: 2em;
+}
+
+
+.values {
+    color: #B02E0C;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.message-div {
+    background-color: #DEE2FF;
+    padding: 1em;
+    border: 1px solid #8E9AAF;
+    border-radius: 1em;
+    margin-bottom: 1.5em;
+}
+
+.message {
+    margin-bottom:0;
+}
+
+.message-head {
+    margin : 0;
+    text-decoration: underline;
+}
+
+header {
+	margin:0 5%;
+    position:relative;
+	margin-top : 1em ;
+}
+
+.detail-head {
+	font-weight: bold;
+	font-size: 1.2em;
+}
