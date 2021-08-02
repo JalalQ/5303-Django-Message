@@ -27,6 +27,7 @@ for user authentication, another app for payments, and a third app to power item
 - [x] Create a new folder, and run a virtual environment on that folder.
   * ``pipenv install django``
   * ``pipenv shell``
+- [x] **Virtual Environments**: They are an isolated container containing all the software dependencies for a given project. The virtualenv tool is a utility that separates all the Python projects in their own realms. **Pipfile** is the dedicated file used by the Pipenv virtual environment to manage project dependencies.
 - [x] create an initial database based on Django's default settings, ``python manage.py migrate``. This will create a SQLite database.
 - [x] Create a database model in models.py file.
 - [x] Activating models. 
