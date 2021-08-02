@@ -9,6 +9,9 @@ class Post(models.Model):
     #name = models.CharField(max_length=50, verbose_name="Name", null=True)
     date_created = models.DateField(verbose_name="Date of Message", auto_now_add=True)
     
+    # For integrity. CASCADE: When the referenced object is deleted, also delete 
+    # the objects that have references to it (when you remove a blog post for instance, 
+    # you might want to delete comments as well).
     author = models.ForeignKey('auth.User', on_delete=models.CASCADE)
     
     def __str__(self):
