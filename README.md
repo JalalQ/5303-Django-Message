@@ -33,6 +33,7 @@ for user authentication, another app for payments, and a third app to power item
 - [x] Activating models. 
  * ``python manage.py makemigrations posts``
  * ``python manage.py migrate posts``
+- [x] **manage.py** is used to execute various Django commands such as running the local web server or creating a new app.
 - [x] Create an admin superuser. ``python manage.py createsuperuser``.
 - [x] Added additional fields in the message (Post) table.
 - [x] Connected the Post table with the auth.User table.
