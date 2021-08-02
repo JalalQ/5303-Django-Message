@@ -5,10 +5,13 @@
     <main class="page-wrapper">
 	
 		<h1>Message board homepage</h1>
-	
+		<!--all_posts_list is declared in posts>views.py-->
 		{% for post in all_posts_list %}
 			<section class="message-div">
 				<p class="message-head">
+				
+				<!-- get_absolute_url is a function which returns the absolute URL address
+				for each of the post -->
 				<a href="{{ post.get_absolute_url }}">
 					<span class="values">{{ post.title }}</span></a>
 					by
